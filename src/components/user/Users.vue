@@ -356,7 +356,7 @@ export default {
       ).catch(err => err)
       // console.log(confirmResult)
       if (confirmResult !== 'confirm') {
-        this.$message.info('已经取消删除')
+        return this.$message.info('已经取消删除')
       }
 
       // 确认删除的操作
